@@ -14,6 +14,8 @@ driver.manage().timeouts().implicitlyWait(5000);
 driver.get(url);
 driver.findElement(By.xpath("//div[@class='navbar-collapse collapse']//li[1]")).click();
 driver.findElement(By.xpath("//div[@class='navbar-collapse collapse']//li[1]/ul/li[2]/a")).click();
+
+//Selecteer het veld 'firstname' by css en vul daar Henk in
 driver.findElement(By.css("input[name=firstname]")).sendKeys("Henk");
 //Selecteer het veld 'lastname' by Name en vul daar de Boer in
 driver.findElement(By.name("lastname")).sendKeys("de Boer");
